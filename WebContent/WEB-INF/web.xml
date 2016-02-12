@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<display-name>jdbcdemo</display-name>
+ <welcome-file-list>
+ <welcome-file>path</welcome-file>
+ </welcome-file-list>
+ <servlet>
+   <servlet-name>bluecarbon</servlet-name>
+   <servlet-class>com.shivi.bluecarbon</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>bluecarbon</servlet-name>
+    <url-pattern>/path</url-pattern>
+ </servlet-mapping>
+ <servlet>
+    <servlet-name>housecreator</servlet-name>
+    <servlet-class>com.shivi.housecreator</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>housecreator</servlet-name>
+    <url-pattern>/createhouse</url-pattern>
+   </servlet-mapping>
+  <servlet>
+    <servlet-name>houseviewer</servlet-name>
+    <servlet-class>com.shivi.houseviewer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>houseviewer</servlet-name>
+    <url-pattern>/viewhouse</url-pattern>
+   </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>adder</servlet-name>
+    <servlet-class>com.shivi.adder</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>adder</servlet-name>
+    <url-pattern>/add</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>memberadder</servlet-name>
+    <servlet-class>com.shivi.memberadder</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>memberadder</servlet-name>
+    <url-pattern>/addmember</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+    <servlet-name>finalviewer</servlet-name>
+    <servlet-class>com.shivi.finalviewer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>finalviewer</servlet-name>
+    <url-pattern>/finalview</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>memberviewer</servlet-name>
+    <servlet-class>com.shivi.memberviewer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>memberviewer</servlet-name>
+    <url-pattern>/memberview</url-pattern>
+   </servlet-mapping>
+</web-app>
